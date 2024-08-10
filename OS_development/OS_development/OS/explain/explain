@@ -1,0 +1,7 @@
+dd: command used for copying and converting data
+if=/dev/zero:specifies input file as /dev/zero that outputs null bytes
+of=$(BUILD_DIR)/main_floppy.img:specifies output file
+bs=512:sets block size to 512 bytes
+mkfs.fat:command used to creat FAT file system
+-F 12:Specifies FAT as FAT12
+-n "NBOS":sets volume label for file system to "NBOS"
